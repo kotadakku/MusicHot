@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtPlaylist"
+        android:text="NHỊP ĐIỆU CẢM XÚC"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#3e3b3b"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listviewPlaylist"
+        android:layout_below="@+id/txtPlaylist">
+
+    </ListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtXemThem"
+        android:textColor="#0a0a0a"
+        android:layout_marginBottom="8dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:text="Xem thêm Playlist"
+        android:textSize="19sp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_playlist_add_black_24dp"
+        android:background="#c9c7c7"
+        android:layout_below="@+id/listviewPlaylist"/>
+
+
+</RelativeLayout>

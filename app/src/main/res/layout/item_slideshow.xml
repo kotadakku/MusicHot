@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/image_slideshow"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/image_slideshow">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="2dp"
+            android:id="@+id/img_slideshow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_slideshow"
+            android:layout_toRightOf="@id/img_slideshow"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txtTitleSong"
+            android:text="title"
+            android:textSize="17dp"
+            android:textColor="#ffffff"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitleSong"
+            android:layout_toRightOf="@id/img_slideshow"
+            android:layout_marginTop="7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textSize="13sp"
+                android:id="@+id/txtContent"
+                android:text="Hello thees hdjsahj"
+                android:maxLines="2"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

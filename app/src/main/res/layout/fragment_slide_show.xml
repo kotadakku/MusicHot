@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/viewPagerSlideshow"
+            android:background="@color/colorPrimary">
+
+        </androidx.viewpager.widget.ViewPager>
+        <me.relex.circleindicator.CircleIndicator
+            android:layout_width="wrap_content"
+            android:layout_height="13dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/circleview">
+        </me.relex.circleindicator.CircleIndicator>
+    </RelativeLayout>
+</ScrollView>

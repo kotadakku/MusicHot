@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/imgbackground"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="5dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/custom_background"
+        />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgPlaylist"
+        android:elevation="6dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignBottom="@+id/imgbackground"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:id="@+id/txtNamePlaylist"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:text="Những hit của năm"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/imgPlaylist"
+        android:layout_alignBottom="@+id/imgPlaylist"/>
+
+</RelativeLayout>

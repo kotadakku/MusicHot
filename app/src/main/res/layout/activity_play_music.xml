@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:weightSum="10"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a845de"
+    tools:context=".ui.PlayMusicActivity">
+    <ImageView
+        android:id="@+id/image_songBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_album_art" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar">
+        <ImageButton
+
+            android:id="@+id/down_arrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_down_arow"
+            android:background="@drawable/ic_down_arow"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_media_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/text_songName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Fev Songs"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_songArtist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="My Fev Album"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpageplaynhac"
+        android:layout_below="@+id/toolbar"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+    </androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/viewpageplaynhac"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:text="00:00"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/textviewtimesong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"/>
+
+                <SeekBar
+                    android:id="@+id/seekbarsong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9" />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="00:00"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:id="@+id/textviewtotal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:padding="10px">
+
+                <ImageButton
+                    android:id="@+id/imagebuttonmix"
+                    android:layout_width="45dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_shuffle_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imagebuttonprev"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_skip_previous_black_24dp" />
+
+
+                <ImageButton
+                    android:id="@+id/imagebuttonplay"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imagebuttonnext"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_skip_next_black_24dp" />
+
+                <ImageButton
+                    android:id="@+id/imagebuttonrepeat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_repeat_black_24dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

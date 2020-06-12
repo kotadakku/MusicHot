@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_album">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/txt_title_album"
+            android:text="ALBUM HOT"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#913677"
+            android:text="Xem thêm"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txtXemThem"
+            />
+    </RelativeLayout>
+
+<!--    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/swipe_refresh"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#E1E1E1"-->
+<!--        android:layout_below="@+id/relative_album"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_below="@+id/relative_album"
+            android:scrollbars="vertical" />
+<!--        <ProgressBar-->
+<!--            android:id="@+id/avi"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="?android:attr/progressBarStyle"-->
+<!--            android:visibility="visible"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            />-->
+<!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+</RelativeLayout>

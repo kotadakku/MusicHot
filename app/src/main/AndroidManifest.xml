@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musichot">
+
+    <application
+        android:name=".util.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".ui.PlayMusicActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.ListPlaylistActivity" />
+        <activity android:name=".ui.ListTopicActivity" />
+        <activity android:name=".ui.ListCategoryActivity" />
+        <activity android:name=".ui.ListAlbumsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.PlaylistActivity" />
+
+        <receiver android:name="dm.audiostreamer.AudioStreamingReceiver">
+            <intent-filter>
+                <action android:name="dm.audiostreamer.close" />
+                <action android:name="dm.audiostreamer.pause" />
+                <action android:name="dm.audiostreamer.next" />
+                <action android:name="dm.audiostreamer.play" />
+                <action android:name="dm.audiostreamer.previous" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".services.NotificationActionService" />
+
+        <service
+            android:name="dm.audiostreamer.AudioStreamingService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".services.OnClearFromRecentService" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+</manifest>

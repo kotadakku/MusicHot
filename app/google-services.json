@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "289834330395",
+    "firebase_url": "https://musichot-5252f.firebaseio.com",
+    "project_id": "musichot-5252f",
+    "storage_bucket": "musichot-5252f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289834330395:android:55b10d09f45a7142288bbe",
+        "android_client_info": {
+          "package_name": "com.example.musichot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289834330395-6gtauukutc1143rsvhiqp8ve2k0q67s0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxuF_BS7TaNis3Hf0gbwsoIzD96v2ldQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289834330395-6gtauukutc1143rsvhiqp8ve2k0q67s0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

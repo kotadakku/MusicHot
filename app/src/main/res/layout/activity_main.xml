@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmanetSlideShow"
+            android:name="com.example.musichot.fragment.FragmentSlideShow"/>
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmanetAlbumHot"
+            android:layout_marginTop="20dp"
+            android:name="com.example.musichot.fragment.FragmentAlbumHot"
+            android:layout_below="@+id/fragmanetSlideShow"/>
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmanetCategory"
+            android:layout_marginTop="20dp"
+            android:name="com.example.musichot.fragment.FragmentTopic"
+            android:layout_below="@+id/fragmanetAlbumHot"/>
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmanetPlaylist"
+            android:layout_below="@+id/fragmanetCategory"
+            android:layout_marginTop="20dp"
+            android:name="com.example.musichot.fragment.FragmentPlaylist"/>
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmanetSongList"
+            android:layout_below="@+id/fragmanetPlaylist"
+            android:layout_marginTop="20dp"
+            android:name="com.example.musichot.fragment.FragmentSongList"/>
+
+    </LinearLayout>
+
+</ScrollView>
